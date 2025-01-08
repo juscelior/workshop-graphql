@@ -6,6 +6,7 @@ using System.Diagnostics.CodeAnalysis;
 namespace GraphqlHello.GraphQL
 {
     //Step 06: Create BookQuery class
+    [ExtendObjectType("Query")]
     public class BookQuery
     {
         public Book GetBook(string title)
